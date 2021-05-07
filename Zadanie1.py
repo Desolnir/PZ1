@@ -21,7 +21,7 @@ if not os.path.exists('results'):
 res_name = os.path.join(os.getcwd(),'results','massiv8.csv')
 
 with open(res_name, 'w', newline='') as csvfile:
-    writer = csv.writer(csvfile, delimiter="\n")
+    writer = csv.writer(csvfile)
     for i in range(len(x)):
         Str = [i, x[i], f(x[i])]
-        writer.writerow(Str)
+        writer.writerow (Str)
